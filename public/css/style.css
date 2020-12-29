@@ -6,6 +6,15 @@
 body {
   font: 16px sans-serif; }
 
+.nav {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6bcb3f;
+  color: white; }
+
 #login-create {
   width: 100vw;
   height: 100vh;
@@ -13,11 +22,209 @@ body {
   justify-content: center;
   align-items: center; }
 
-#login-form {
+#loginForm {
   width: 80vw;
+  max-width: 30rem;
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 1rem;
   text-align: center;
-  background-color: #cb3f3f; }
+  background-color: #6bcb3f; }
+  #loginForm h1 {
+    color: white; }
+  #loginForm input {
+    width: 100%;
+    height: 2.5rem;
+    margin: 1rem 0rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px white; }
+    #loginForm input::placeholder {
+      color: white;
+      font: 16px sans-serif; }
+  #loginForm a {
+    margin: 1rem 0rem; }
+
+#rooms {
+  width: 100%;
+  height: 2.5rem;
+  font: 16px sans-serif; }
+
+#sign-in-btn {
+  width: 100%;
+  height: 2.5rem;
+  max-width: 10rem;
+  margin-top: 1rem; }
+
+#chatroom-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex; }
+
+#burger-menu {
+  display: none; }
+
+#chatroom-info-container {
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a7ff7e;
+  position: relative; }
+
+#chatroom-info-container-inner {
+  width: 70%;
+  height: 70vh;
+  padding: 2rem;
+  background-color: #6bcb3f; }
+
+#chat-container {
+  width: 70vw;
+  height: 100vh;
+  position: relative; }
+
+#room-name-container {
+  margin: 1rem 0rem; }
+
+#users-wrapper {
+  width: 100%;
+  height: 80%;
+  background-color: #a7ff7e; }
+
+#user-list {
+  width: 100%;
+  height: 90%;
+  padding: 1rem;
+  list-style: none;
+  overflow-y: scroll; }
+
+.user {
+  display: flex;
+  align-items: center;
+  font: bold 20px sans-serif;
+  margin: 1rem 0rem; }
+  .user img {
+    width: 2.5rem;
+    margin-right: 1rem; }
+
+#report-bugs {
+  width: 10rem;
+  height: 2.5rem;
+  margin: 2rem 0rem; }
+
+#leave-btn {
+  width: 10rem;
+  height: 2.5rem; }
+
+#burger-menu-close {
+  display: none; }
+
+#chat-area {
+  width: 100%;
+  height: 70vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  overflow-y: scroll; }
+
+.message-outer {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; }
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: lightcoral; }
+
+.message-inner {
+  width: 90%;
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column; }
+
+.message {
+  width: 100%;
+  padding: 1rem;
+  background-color: #a7ff7e;
+  border-radius: 20px; }
+
+.time-sent {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem; }
+
+#messaging-area {
+  width: 100%;
+  height: calc(30vh - 3rem);
+  background-color: #6bcb3f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem; }
+  #messaging-area button {
+    width: 10rem;
+    height: 2.5rem;
+    margin: 1rem 0rem; }
+
+#messageBox {
+  width: 90%;
+  padding: 1rem 1rem 5rem 1rem;
+  border-radius: 20px; }
+  #messageBox:focus {
+    outline: none; }
+
+@media screen and (max-width: 1440px) {
+  #room-name-container, #room-name, #users-wrapper h1 {
+    font-size: 25px; }
+  #chatroom-info-container-inner {
+    width: 90%; }
+  .user {
+    font-size: 16px;
+    margin: 0.5rem 0rem; }
+    .user img {
+      width: 2rem; } }
+
+@media screen and (max-width: 1024px) {
+  #room-name-container, #room-name, #users-wrapper h1 {
+    font-size: 20px; }
+  #chatroom-info-container-inner {
+    padding: 1rem; }
+  .user {
+    font-size: 14px; }
+    .user img {
+      width: 1.5rem; } }
+
+@media screen and (max-width: 768px) {
+  #chatroom-info-container {
+    width: 75%;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: all ease 1s; }
+  #chat-container {
+    width: 100vw; }
+  #chatroom-info-container-inner {
+    width: 75%; }
+  #burger-menu {
+    display: block;
+    position: absolute;
+    left: 1rem; }
+  #burger-menu-close {
+    display: block;
+    position: absolute;
+    right: 0.5rem;
+    top: 1rem; } }

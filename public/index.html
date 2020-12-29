@@ -7,21 +7,20 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <nav class="nav">
+        <h1>Koality Time</h1>
+    </nav>
     <div id="login-create">
-        <form id="login-form" action="chat.html">
+        <form id="loginForm"  action="./pages/chat.html">
             <h1>Sign In</h1>
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="password" required>
+            <input type="text" name="user" placeholder="Username" required>
             <select name="rooms" id="rooms">
                 <option value="Politics">Politics</option>
-                <option value="Politics">Chill</option>
-                <option value="Politics">Music</option>
-                <option value="Politics">Sports</option>
+                <option value="Chill">Chill</option>
+                <option value="Music">Music</option>
+                <option value="Sports">Sports</option>
             </select>
-            <a href="./pages/createacct.html">Dont have an account? Create one here</a>
-            <h3>Or</h3>
-            <a href="./pages/guest.html">Sign In as Guest</a>
-            <button type="submit">Sign In</button>
+            <button id="sign-in-btn" type="submit">Connect</button>
         </form>
 
     </div>

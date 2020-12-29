@@ -82,11 +82,12 @@ socket.on('info',()=>{
 })
 
 //create new message function
+const profilePic = "../resources/profile-img.svg";
 
 function newMessage(message){
     
     const innerMessage = `
-    <img src = "../resources/profile-img.svg" alt="profile-img">
+    <img src = ${profilePic} alt="profile-img">
     <div class="message-inner">
         <div class="name-wrapper">
             <h1>${message.username}</h1>
@@ -103,18 +104,19 @@ function newMessage(message){
     chatArea.appendChild(messageContainer);
 }
 
+//control scroll placement in chat area
+
 function scrollControl(){
     chatArea.scrollTop = chatArea.scrollHeight;
 }
 
+//update list of users 
+
 function updateUserList(users){
     const usersList = document.getElementById('user-list');
-    updatedList = `${users.map(user=>`<li class="user"><img src = "../resources/profile-img.svg" alt="profile-img">${user.userName}</li>`).join('')}`;
+    updatedList = `${users.map(user=>`<li class="user"><img src = ${profilePic} alt="profile-img">${user.userName}</li>`).join('')}`;
     usersList.innerHTML = updatedList;
 }
-
-
-
 
 // -----------------------------MENU CONTROL
 

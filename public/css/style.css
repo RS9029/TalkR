@@ -115,18 +115,26 @@ body {
 #report-bugs {
   width: 10rem;
   height: 2.5rem;
-  margin: 2rem 0rem; }
+  margin: 2rem 0rem;
+  background-color: #6bcb3f;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold; }
 
 #leave-btn {
   width: 10rem;
-  height: 2.5rem; }
+  height: 2.5rem;
+  background-color: #6bcb3f;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold; }
 
 #burger-menu-close {
   display: none; }
 
 #chat-area {
   width: 100%;
-  height: 70vh;
+  height: 65vh;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -166,7 +174,7 @@ body {
 
 #messaging-area {
   width: 100%;
-  height: calc(30vh - 3rem);
+  height: calc(35vh - 3rem);
   background-color: #6bcb3f;
   display: flex;
   flex-direction: column;
@@ -176,7 +184,12 @@ body {
   #messaging-area button {
     width: 10rem;
     height: 2.5rem;
-    margin: 1rem 0rem; }
+    min-height: 2.5rem;
+    margin: 1rem 0rem;
+    background-color: #6bcb3f;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold; }
 
 #messageBox {
   width: 90%;

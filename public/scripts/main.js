@@ -150,13 +150,20 @@ function closeMenu(){
 
 
 const reportBtn = document.getElementById('report-bugs');
-
+const modal = document.getElementById('modal-bg');
 
 reportBtn.addEventListener('click', showReport);
+modal.addEventListener('click', closeReport);
+
+function closeReport(e){
+    if(e.target==modal){
+        modal.style.display = "none";
+    }
+}
 
 
 function showReport(){
-
+    modal.style.display = "flex";
 }
 
 

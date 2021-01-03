@@ -132,12 +132,13 @@ body{
 }
 
 #room-name-container{
-    margin: 1rem 0rem;
+    margin: 1rem;
 }
 
 #users-wrapper{
     width: 100%;
     height: 80%;
+    padding: 1rem;
     background-color: $secondaryGreen;
 }
 
@@ -274,8 +275,43 @@ body{
 }
 
 
+//Modal
 
-// ----------Chat Page Media Queries
+#modal-bg{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+#modal{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#report-form{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+// ---------- Chat Page Media Queries
 
 @media screen and(max-width:1440px){
     #room-name-container, #room-name, #users-wrapper h1{

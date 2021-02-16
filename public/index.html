@@ -9,17 +9,17 @@
 </head>
 <body>
     <nav class="nav">
-        <h1><img src="resources/talkR-icon.png" class="logo-icon" alt=""> TalkR</h1>
+        <a href="/" style="text-decoration: none; color: white;"><h1> <img src="../resources/talkR-icon.png" class="logo-icon" alt=""> TalkR</h1></a>
     </nav>
     <div id="login-create">
         <form id="loginForm"  action="./pages/chat.html">
             <h1>Sign In</h1>
             <input type="text" name="user" placeholder="Username" required>
             <select name="rooms" id="rooms">
-                <option value="Politics">Politics</option>
-                <option value="Chill">Chill</option>
-                <option value="Music">Music</option>
-                <option value="Sports">Sports</option>
+                <option class="topic-options" value="Politics">Politics</option>
+                <option class="topic-options" value="Chill">Chill</option>
+                <option class="topic-options" value="Music">Music</option>
+                <option class="topic-options" value="Sports">Sports</option>
             </select>
             <button id="sign-in-btn" type="submit">Connect</button>
         </form>

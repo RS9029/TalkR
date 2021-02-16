@@ -45,6 +45,8 @@ button {
     background-color: transparent;
     border: none;
     border-bottom: solid 1px white; }
+    #loginForm input:focus {
+      outline: none; }
     #loginForm input::placeholder {
       color: white;
       font: 16px sans-serif; }
@@ -58,6 +60,8 @@ button {
   background-color: transparent;
   border: 1px solid white;
   color: white; }
+  #rooms:focus {
+    outline-color: white; }
 
 #sign-in-btn {
   width: 100%;
@@ -67,7 +71,15 @@ button {
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  font: bold 16px sans-serif; }
+  font: bold 16px sans-serif;
+  cursor: pointer; }
+  #sign-in-btn:focus {
+    outline: none; }
+  #sign-in-btn:hover {
+    background-color: #78cc5f; }
+
+.topic-options {
+  color: black; }
 
 #chatroom-wrapper {
   width: 100vw;
@@ -151,6 +163,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center; }
+  #report-bugs:hover {
+    background-color: #78cc5f; }
 
 #report-icon {
   width: 1.5rem;
@@ -166,6 +180,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center; }
+  #leave-btn:hover {
+    background-color: #78cc5f; }
 
 #exit-icon {
   width: 1.5rem;
@@ -235,11 +251,14 @@ button {
     border: 1px solid white;
     color: white;
     font-weight: bold; }
+    #messaging-area button:hover {
+      background-color: #78cc5f; }
 
 #messageBox {
   width: 90%;
   padding: 1rem 1rem 5rem 1rem;
-  border-radius: 20px; }
+  border-radius: 20px;
+  border: none; }
   #messageBox:focus {
     outline: none; }
 
@@ -275,18 +294,28 @@ button {
   justify-content: center;
   align-items: center; }
   #report-form input {
-    width: 50%;
+    width: 80%;
     height: 2.5rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid grey; }
   #report-form textarea {
-    width: 50%;
-    height: 5rem; }
+    width: 80%;
+    height: 50%;
+    border: 1px solid grey;
+    padding: 0.5rem; }
   #report-form button {
     width: 10rem;
     height: 2.5rem;
     margin-top: 1rem;
-    font: 20px sans-serif;
-    background-color: #6DBE55; }
+    font: 18px sans-serif;
+    background-color: #6DBE55;
+    border: none;
+    color: white; }
+    #report-form button:hover {
+      background-color: #78cc5f; }
+    #report-form button:focus {
+      outline: none; }
 
 @media screen and (max-width: 1440px) {
   #room-name-container, #room-name, #users-wrapper h1 {

@@ -148,12 +148,17 @@ function closeMenu(){
 
 // ------------------------------ REPORT BUG CONTROL
 
-
+const closeBtn = document.getElementById('modal-close-btn');
 const reportBtn = document.getElementById('report-bugs');
 const modal = document.getElementById('modal-bg');
 
 reportBtn.addEventListener('click', showReport);
 modal.addEventListener('click', closeReport);
+closeBtn.addEventListener('click', closeReportWithBtn);
+
+function closeReportWithBtn(){
+    modal.style.display = "none";
+}
 
 function closeReport(e){
     if(e.target==modal){

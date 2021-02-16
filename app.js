@@ -19,7 +19,7 @@ app.set('view-engine','html');
 
 // runs when connection to client complete
 
-const talkRBotName = "KoalaBot";
+const talkRBotName = "Chat Bot";
 
 io.on('connection',socket =>{
     console.log('back end clear');

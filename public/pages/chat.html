@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>TalkR</title>
+    <link rel="icon" href="../resources/talkR-icon.png">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <input type="text" placeholder="Name" required>
                 <input type="text" placeholder="Email" required>
                 <textarea name="message" id="message-box" placeholder="Issue" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">Report</button>
                 <button>Close</button>
             </form>
         </div>
@@ -28,7 +29,8 @@
     <div id="chatroom-wrapper">
         <div id="chatroom-info-container">
             <div id="chatroom-info-container-inner">
-                <h1 id="room-name-container">Room: <span id="room-name"></span></h1>
+                <h1 id="room-name-container"><img src="../resources/room-icon.svg" id="room-icon" alt=""> Room: <span id="room-name"></span></h1>
+                <hr id = "userline">
                 <div id="users-wrapper">
                     <h1>Users:</h1>
                     <ul id="user-list">
@@ -37,19 +39,19 @@
                 </div>
             </div>
             <h3 id="burger-menu-close">close</h3>
-            <button id="report-bugs">Report Bugs</button>
-            <a href="../index.html"><button id="leave-btn">Leave Room</button></a>
+            <button id="report-bugs"> <img id="report-icon" src="../resources/report-bug.svg" alt=""> Report Bugs</button>
+            <a href="../index.html"><button id="leave-btn"><img id="exit-icon" src="../resources/exit-icon.svg" alt=""> Leave Room</button></a>
             
         </div>
         <div id = 'chat-container'>
             <nav class="nav">
                 <h3 id="burger-menu">Menu</h3>
-                <h1>Koality Time</h1>
+                <h1> <img src="../resources/talkR-icon.png" class="logo-icon" alt=""> TalkR</h1>
             </nav>
             <ul id="chat-area"></ul>
             <form action="" id="messaging-area">
-                <textarea type="text" placeholder="message" id="messageBox"></textarea>
-                <button>Send</button>
+                <textarea type="text" placeholder="Message" id="messageBox"></textarea>
+                <button> <img src="../resources/send-icon.svg" alt="" id="send-icon"> Send</button>
             </form>
         </div>
 
